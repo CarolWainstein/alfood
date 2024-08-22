@@ -1,5 +1,3 @@
-![Event Tracker](thumbnail.png)
-
 # Event Tracker
 
 Event Tracker is a React-based application designed to help users manage their schedules effectively. This application allows users to view, create, and manage events on a calendar. It features an intuitive interface and supports both daily and weekly views.
