@@ -1,33 +1,56 @@
-![Integrando seu projeto React com APIs](thumbnail.png)
+![Event Tracker](thumbnail.png)
 
-# Alfood
+# Event Tracker
 
-O Alfood é um site que lista restaurantes e pratos do menu. 
-É um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
+Event Tracker is a React-based application designed to help users manage their schedules effectively. This application allows users to view, create, and manage events on a calendar. It features an intuitive interface and supports both daily and weekly views.
 
-<img src="screencapture.png" alt="Imagem do Alfood" width="50%">
+<img src="screencapture.png" alt="Event Tracker Image" width="50%">
 
+## 🔨 Project Features
 
-## 🔨 Funcionalidades do projeto
+- **Event Management:** Add, update, and delete events on the calendar.
+- **Calendar Views:** Switch between daily and weekly views to manage your schedule.
+- **Customizable:** Personalize event details including start and end times, descriptions, and colors.
+- **Responsive Design:** The app is designed to be used on both desktop and mobile devices.
 
-O Alfood começa com uma listagem estática de seu conteúdo e é esse o problema que queremos resolver.
-No decorrer do curso, vamos implementar toda a camada de comunicação com a API.
+## ✔️ Technologies and Techniques Used
 
-## ✔️ Técnicas e tecnologias utilizadas
-
-Se liga nessa lista de tudo que usaremos nesse treinamento:
+This project was developed using the following technologies:
 
 - `React`
-- `React Hooks`
 - `TypeScript`
-- `axios`
+- `SCSS`
+- `Recoil` for state management
+- `JSON Server` for mock API
 
-## 🛠️ Abrir e rodar o projeto
+## 🛠️ Running the Project Locally
 
-Para abrir e rodar o projeto, execute npm i para instalar as dependências e npm start para inicar o projeto.
+To run the project locally, follow these steps:
 
-Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
+1. **Install Dependencies:** Run `npm install` to install the necessary dependencies.
+2. **Set Up JSON Server:**
+   - Ensure you have `json-server` installed globally (`npm install -g json-server`).
+   - Create a `db.json` file in the root directory with the following structure:
 
-## 📚 Mais informações do curso
+     ```json
+     {
+       "eventos": [
+         {
+           "descricao": "Study React",
+           "inicio": "2022-01-15T09:00",
+           "fim": "2022-01-15T13:00",
+           "completo": false,
+           "id": 101
+         },
+         // Add more events as needed
+       ]
+     }
+     ```
 
-Busque na plataforma da Alura o curso **Integrando seu projeto React com APIs** publicado na Escola Frontend.
+   - Start the JSON Server with the command `json-server --watch db.json --port 8080`.
+3. **Start the React Application:** Run `npm start` to launch the application.
+4. **Access the Application:** Open <a href="http://localhost:3000/">http://localhost:3000/</a> in your browser.
+
+## 📚 Course Information
+
+This project was developed as part of the **Integrating Your React Project with APIs** course offered by Alura. The course provides a comprehensive guide on integrating React applications with APIs and managing application state.
